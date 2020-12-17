@@ -20,7 +20,7 @@ fun main() {
 }
 
 class Editor(var content: String) {
-    
+
     fun createState(): EditorState = EditorState(content)
     fun restore(state: EditorState) {
         content = state.content

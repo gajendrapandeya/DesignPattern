@@ -35,7 +35,7 @@ class BrowseHistory( val urls: ArrayList<String>) {
     inner class ListIterator(val history: BrowseHistory): Iterator {
         private var index = 0
         override fun hasNext(): Boolean {
-           return (index < history.urls.size)
+            return (index < history.urls.size)
         }
 
         override fun current(): String {
